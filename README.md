@@ -110,7 +110,7 @@ if (is_empty($_POST["username"]) || is_empty($_POST["email"])
             The sign in page acts pretty much the same as the sign up page, only the way it deals with user's input is different. <br/>
             The sign in page takes the user's input for username/email and see if it matches with anything that is previously submitted, <br/> either username or email, that are saved in PHP's <code>$_SESSION</code>. <br/>
             It then takes the user's input for password, takes the salt (saved in <code>$_SESSION["salt"]</code>), and hash the input for <br/> password with that salt using SHA-1. The page then compares the collected hash with <code>$_SESSION["hash"]</code>. <br/>
-            If either the username (or email) or the password matches, PHP calls JavaScript's <code>incorrectCredential()</code> function. <br/>
+            If either the username (or email) or the password doesn't matches, PHP calls JavaScript's <code>incorrectCredential()</code> function. <br/>
             If not, it redirects to the homepage. :)
             </p>
         </p>
