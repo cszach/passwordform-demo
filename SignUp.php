@@ -24,7 +24,7 @@
         </div>
         <div id="info">
             <div id="info-button">Page info</div> <!--This is a button-->
-            <div id="code-button">See code</div> <!--This is a button as well-->
+            <div id="code-button"><a href="http://bit.ly/2tRHX1V" target="blank" id="code-link" >See code</a></div> <!--This is a button as well-->
             <div id="sign-in-button">Sign in</div> <!--This is the last button...-->
             <div id="site-description"> <!--Site description is hidden and is toggled by info-button-->
                 Written by Duong in HTML, CSS, JavaScript, PHP. <br/>

@@ -78,6 +78,14 @@ input[type="submit"]:hover {
     margin-left: 30px;
 }
 
+#code-link {
+    text-decoration: none;
+}
+
+#code-link:visited, #code-link:active { /*Make sure that the link always have the same color*/
+    color: #FF826F;
+}
+
 #sign-in-button {
     margin-left: 30px;
 }
@@ -87,7 +95,7 @@ input[type="submit"]:hover {
     height: 50px;
     width: 150px;
     padding-top: 15px;
-    color: #FF826F;;
+    color: #FF826F;
     background-color: /*#FADE61*/ #FFF165;
     border-radius: 10px;
     text-align: center;
