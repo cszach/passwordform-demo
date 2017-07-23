@@ -1,0 +1,114 @@
+body {
+    margin: 20px 0px 0px 0px;
+    background-color: #03B4C3;
+}
+
+h1 {
+    margin-left: 1100px;
+    margin-bottom: 5px;
+    color: white;
+    font-family: Dosis, sans-serif;
+    font-size: 50px;
+    text-shadow: -2px 0 grey, 0 2px grey, 2px 0 grey, 0 -2px grey;
+}
+
+h1:hover {
+    color: orange;
+}
+
+span {
+    margin-left: 1120px;
+    color: white;
+    font-family: Dosis, sans-serif;
+    font-size: 20px;
+}
+
+img {
+    margin-left: 70px;
+    border-radius: 5%;
+    transition: 1s;
+    margin-right: 230px;
+}
+
+img:hover {
+    width: 800px;
+    margin-right: 30px;
+}
+
+img, form {
+    display: inline-block;
+}
+
+.field {
+    height: 60px;
+    width: 380px;
+    margin: 10px 5px 5px 5px;
+    border: 2px black;
+    border-radius: 20px;
+    font-size: 24px;
+}
+
+.field:focus {
+    background-color: #FF826F;
+}
+
+input[type="submit"] {
+    height: 45px;
+    width: 130px;
+    margin-left: 140px;
+    margin-top: 10px;
+    background-color: white;
+    border: 0px;
+    border-radius: 20px;
+    font-size: 22px;
+    font-family: Fredoka One, sans-serif;
+    transition: 1s;
+}
+
+input[type="submit"]:hover {
+    background-color: navy;
+    color: grey;
+}
+
+#info-button {
+    margin-left: 110px;
+}
+
+#code-button {
+    margin-left: 30px;
+}
+
+#sign-in-button {
+    margin-left: 30px;
+}
+
+#info-button, #code-button, #sign-in-button {
+    display: inline-block;
+    height: 50px;
+    width: 150px;
+    padding-top: 15px;
+    color: #FF826F;;
+    background-color: /*#FADE61*/ #FFF165;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Fredoka One, sans-serif;
+}
+
+#site-description {
+    margin-left: 175px;
+    margin-top: 30px;
+    color: white;
+    font-family: Fredoka One, sans-serif;
+}
+
+#contact {
+    margin-top: 20px;
+    text-align: center;
+    font-family: Open Sans, serif;
+}
+
+#copyright-info {
+    text-align: center;
+    font-family: Open Sans, serif;
+}
