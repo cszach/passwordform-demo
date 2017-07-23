@@ -71,7 +71,7 @@
         $_SESSION["username"] = $_POST["username"];
         $_SESSION["email"] = $_POST["email"];
 
-        // Encrypt password
+        // Hash password
         $salt = md5($_POST["username"]);  // Use hashed username as salt
         $_SESSION["salt"] = $salt;
         $_SESSION["hash"] = sha1($_POST["password"].$salt);  // Hash password then store it
