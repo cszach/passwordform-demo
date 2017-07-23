@@ -16,7 +16,7 @@
         <p>
             A virtual server can be created with an application. Maybe Wampp, maybe Xampp. <br/>
             Once started, the application links localhost with a specific directory on your computer, known as "root directory". <br/>
-            For example, as for Xampp, the root directory on Windwos is C:\xampp\htdocs, on Linux is /opt/lampp/htdocs. <br/>
+            For example, as for Xampp, the root directory on Windows is C:\xampp\htdocs, on Linux is /opt/lampp/htdocs. <br/>
             To access a file in the root directory via your web browser, you would have to type localhost, and then <br/>
             a forward slash, and then the file name. <br/> <br/>
             For instance, you have a file called "index.html" in your root directory. That is, the location of that file <br/>
@@ -58,50 +58,48 @@
         <p>
             <h3>On the sign up page:</h3>
             <p>
-            When you hover your mouse cursor on the text "Sign Up", it turns to orange. This is done by CSS. Look at the code: <br/>
-            <code>
-            input[type="submit"] { <br/>
-            &emsp; height: 45px; <br/>
-            &emsp; width: 130px; <br/>
-            &emsp; margin-left: 140px; <br/>
-            &emsp; margin-top: 10px; <br/>
-            &emsp; background-color: white; <br/>
-            &emsp; border: 0px; <br/>
-            &emsp; border-radius: 20px; <br/>
-            &emsp; font-size: 22px; <br/>
-            &emsp; font-family: Fredoka One, sans-serif; <br/>
-            &emsp; transition: 1s; <br/>
-            }
-            </code> <br/> <br/>
+            When you hover your mouse cursor on the submit button, its background turns to dark blue. This is done by CSS. Look at the code: <br/>
+<pre>
+input[type="submit"] {
+    height: 45px;
+    width: 130px;
+    margin-left: 140px;
+    margin-top: 10px;
+    background-color: white;
+    border: 0px;
+    border-radius: 20px;
+    font-size: 22px;
+    font-family: Fredoka One, sans-serif;
+    transition: 1s;
+}</pre> <br/> <br/>
             The <code>transition</code> property at the end controls the amount of time for the button to take the effect of <br/>
             hovering the mouse cursor on it. Hovering action is listened by the pseudo class <code>hover</code>: <br/>
-            <code>
-            input[type="submit"]:hover { <br/>
-            &emsp; background-color: navy; <br/>
-            &emsp; color: grey; <br/>
-            }
-            </code> <br/> <br/>
+<pre>
+input[type="submit"]:hover {
+    background-color: navy;
+    color: grey;
+}</pre> <br/> <br/>
             When you click on the "Page info" button, the page's description rolls out. This is done by a JavaScript library called <br/> <i>jQuery</i>. Here is the code that handles this (You can find this in script.js file): <br/>
-            <code>
-            $("#site-description").hide(); <br/>
-            $("#info-button").on("click", function() { <br/>
-            &emsp; $("#site-description").slideToggle(); <br/>
-            });
-            </code> <br/> <br/>
+<pre>
+$("#site-description").hide();
+$("#info-button").on("click", function() {
+    $("#site-description").slideToggle();
+});
+</pre> <br/> <br/>
             If you leave any of the fields blank, PHP does know that with the follow code: <br/>
-            <code>
-            if (is_empty($_POST["username"]) || is_empty($_POST["email"]) <br/>
-            || is_empty($_POST["password"]) || is_empty($_POST["cfpassword"]) <br/>
-            ) { <br/>
-            &emsp; ... <br/>
-            }
-            </code> <br/>
+<pre>
+if (is_empty($_POST["username"]) || is_empty($_POST["email"])
+|| is_empty($_POST["password"]) || is_empty($_POST["cfpassword"])
+) {
+    ...
+}
+</pre> <br/>
             In which the <code>is_empty()</code> function is defined earlier. It (<code>is_empty</code> function) uses <code>strlen</code> to know <br/> if the length of the input is 0. If it is, PHP calls the JavaScript function <code>emptyField()</code>. <br/>
             Here's how PHP calls a JavaScript function: <br/>
-            <code>echo "&lt;script&gt;anyJSFunction(); &lt;/script&gt;"</code> <br/>
+            <code>echo "&lt;script&gt; anyJSFunction(); &lt;/script&gt;"</code> <br/>
             That is actually an example of HTML in CSS. <br/> <br/>
             If you fill in all the fields, and have the password confirmation right, then when you hit the submit button, <br/>
-            PHP does the encryption job. <br/>
+            PHP does the hashing job. <br/>
             Usually, sites <a href="http://bit.ly/2umTmdA" target="_blank">hash</a> passwords and save them into sessions. This site does just like that. <br/>
             It first hashes the username with MD5 function to generate a salt, and then use that salt to hash the user's password <br/> with SHA-1 function. <br/>
             The hashed password and the salt are saved into 2 sessions with PHP's <code>$_SESSION</code> method. <br/>
