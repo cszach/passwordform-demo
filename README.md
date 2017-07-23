@@ -7,9 +7,9 @@
         <p>Simple PHP code sample for processing sign up form.</p>
         <h3>Contents</h3>
         <ol>
-            <li><a href="README.md#content-1">Virtual server</a></li>
-            <li><a href="README.md#content-2">Try it out</a></li>
-            <li><a href="README.md#content-3">How it works</a></li>
+            <li><a href="#content-1">Virtual server</a></li>
+            <li><a href="#content-2">Try it out</a></li>
+            <li><a href="#content-3">How it works</a></li>
         </ol>
         <hr/>
         <h2 id="content-1">Virtual server</h2>
