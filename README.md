@@ -104,6 +104,9 @@ if (is_empty($_POST["username"]) || is_empty($_POST["email"])
             It first hashes the username with MD5 function to generate a salt, and then use that salt to hash the user's password <br/> with SHA-1 function. <br/>
             The hashed password and the salt are saved into 2 sessions with PHP's <code>$_SESSION</code> method. <br/>
             The sign up page then redirects you to the sign in page with the <code>header</code> function. <br/>
+            </p>
+            <h3>On the sign in page:</h3>
+            <p>
             The sign in page acts pretty much the same as the sign up page, only the way it deals with user's input is different. <br/>
             The sign in page takes the user's input for username/email and see if it matches with anything that is previously submitted, <br/> either username or email, that are saved in PHP's <code>$_SESSION</code>. <br/>
             It then takes the user's input for password, takes the salt (saved in <code>$_SESSION["salt"]</code>), and hash the input for <br/> password with that salt using SHA-1. The page then compares the collected hash with <code>$_SESSION["hash"]</code>. <br/>
