@@ -101,7 +101,7 @@ if (is_empty($_POST["username"]) || is_empty($_POST["email"])
             That is actually an example of HTML in CSS. <br/> <br/>
             If you fill in all the fields, and have the password confirmation right, then when you hit the submit button, <br/>
             PHP does the hashing job. <br/>
-            Usually, sites <a href="#" onclick="window.open('http://bit.ly/2umTmdA'); return false;">hash</a> passwords and save them into sessions. This site does just like that. <br/>
+            Usually, sites <a onclick="window.open('http://bit.ly/2umTmdA'); return false;">hash</a> passwords and save them into sessions. This site does just like that. <br/>
             It first hashes the username with MD5 function to generate a salt, and then use that salt to hash the user's password <br/> with SHA-1 function. <br/>
             The hashed password and the salt are saved into 2 sessions with PHP's <code>$_SESSION</code> method. <br/>
             The sign up page then redirects you to the sign in page with the <code>header</code> function. <br/>
@@ -120,12 +120,12 @@ if (is_empty($_POST["username"]) || is_empty($_POST["email"])
         <p>
             <ol>
                 <!--href="#" onclick='window.open("http://www.foracure.org.au");return false;'-->
-                <li><a href="#" onclick="window.open('https://jquery.com/'); return false;">jQuery</a> (JavaScript's library)</li>
-                <li>PHP's <a href="#" onclick="window.open('http://php.net/manual/en/reserved.variables.session.php'); return false;">$_SESSION</a></li>
-                <li><a href="#" onclick="window.open('https://en.wikipedia.org/wiki/Cryptographic_hash_function'); return false;">Password hashing</a> (English)</li>
-                <li><a href"#" onclick="window.open('https://vi.wikipedia.org/wiki/H%C3%A0m_b%C4%83m_m%E1%BA%ADt_m%C3%A3_h%E1%BB%8Dc'); return false;">Password hashing</a> (Vietnamese)</li>
-                <li>PHP's <a href="#" onclick="window.open('http://php.net/manual/en/function.md5.php'); return false;">md5 function</a>, used to calculate the MD5 hash of a string</li>
-                <li>PHP's <a href="#" onclick="window.open('http://php.net/manual/en/function.sha1.php'); return false;">sha1 function</a>, used to calculate the SHA-1 hash of a string</li>
+                <li><a onclick="window.open('https://jquery.com/'); return false;">jQuery</a> (JavaScript's library)</li>
+                <li>PHP's <a onclick="window.open('http://php.net/manual/en/reserved.variables.session.php'); return false;">$_SESSION</a></li>
+                <li><a onclick="window.open('https://en.wikipedia.org/wiki/Cryptographic_hash_function'); return false;">Password hashing</a> (English)</li>
+                <li><a onclick="window.open('https://vi.wikipedia.org/wiki/H%C3%A0m_b%C4%83m_m%E1%BA%ADt_m%C3%A3_h%E1%BB%8Dc'); return false;">Password hashing</a> (Vietnamese)</li>
+                <li>PHP's <a onclick="window.open('http://php.net/manual/en/function.md5.php'); return false;">md5 function</a>, used to calculate the MD5 hash of a string</li>
+                <li>PHP's <a onclick="window.open('http://php.net/manual/en/function.sha1.php'); return false;">sha1 function</a>, used to calculate the SHA-1 hash of a string</li>
             </ol>
         </p>
     </body>
