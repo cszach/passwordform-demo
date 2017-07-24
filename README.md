@@ -114,5 +114,17 @@ if (is_empty($_POST["username"]) || is_empty($_POST["email"])
             If not, it redirects to the homepage. :)
             </p>
         </p>
+        <hr/>
+        <h2 id="content-4">External References</h2>
+        <p>
+            <ol>
+                <li><a href="https://jquery.com/" target="_blank">jQuery</a> (JavaScript's library)</li>
+                <li>PHP's <a href="http://php.net/manual/en/reserved.variables.session.php" target="_blank">$_SESSION</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function" target="_blank">Password hashing</a> (English)</li>
+                <li><a href="https://vi.wikipedia.org/wiki/H%C3%A0m_b%C4%83m_m%E1%BA%ADt_m%C3%A3_h%E1%BB%8Dc" target="_blank">Password hashing</a> (Vietnamese)</li>
+                <li>PHP's <a href="http://php.net/manual/en/function.md5.php" target="_blank">md5 function</a>, used to calculate the MD5 hash of a string</li>
+                <li>PHP's <a href="http://php.net/manual/en/function.sha1.php" target="_blank">sha1 function</a>, used to calculate the SHA-1 hash of a string</li>
+            </ol>
+        </p>
     </body>
 </html>
